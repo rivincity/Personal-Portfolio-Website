@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/76fcf8120a.js" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class = "container">
+            <nav>
+                <img src = "images/logo.png" class = "logo">
+                <ul id = "sidemenu">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#services">Services</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Freshman</span> at the University of Maryland</p>
+                <h1>Hi, I'm <span>Rivan Parikh</span> <br> From New Jersey!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id = "about">
+        <div class = "container">
+            <div class="row"> 
+                <div class="about-col-1">
+                    <img src= "images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p class = "about-me">My name is Rivan Parikh and I am a freshman at the University of Maryland College Park. I am majoring in Computer Science and am currently applying for the Business Analytics Minor. I have a 3.805 GPA and made the Dean's List this past fall semester. I am interested in internship opportunities related to <span>software development</span>, <span>data analytics</span>, <span>ML/AI algorithms</span>, and <span>UI design</span> whether its web development or app development.</p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Created several web pages</li>
+                            <li><span>App Development</span><br>Developed mobile applications on Android Studio</li>
+                            <li><span>Game Development</span><br>Created 2D and 3D games in Unity</li>
+                            <li><span>AI Research</span><br>Studied Human-Computer Interaction at NJIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                        <li><span>September 2023 - Present</span><br>Member of AWS Cloud Club and BigTh!nkAI Club</li>
+                            <li><span>June 2022 - August 2022</span><br>Research Intern at NJIT</li>
+                            <li><span>May 2022 - June 2022</span><br>InspiritAI Student</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>August 2023 - May 2027</span><br>B.S. from University of Maryland College Park</li>
+                            <li><span>September 2019 - June 2023</span><br>High School Diploma from South Brunswick High School</li>
+                        </ul>
+                    </div>
+                    <h1 class = "sub-sub-title">My Hobbies</h1>
+                    <div class = "hobbies-list">
+                        <div>
+                            <i class="fa-solid fa-football"></i>
+                            <h2>Playing and Watching Sports</h2>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-xbox"></i>
+                            <h2>Xbox Gaming</h2>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <h2>Working Out</h2>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-spotify"></i>
+                            <h2>Listening to Music</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "services">
+        <div class = "container">
+            <h1 class = "sub-title">My Services</h1>
+            <div class = "services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I have designed several beginner webpages using HTML, CSS, and Bootstrap for mobile functionality. Click learn more to see an example of a full-site build and to explore my Github page.</p>
+                    <a href = "https://github.com/rivincity/giants">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>  
+                    <h2>Android App Development</h2>
+                    <p>I have develop several android mobile applications and games using Android Studio. Some applications include Whack-A-Mole, GPS App, Weather App, Street Racer Game, etc. Click learn more to see my Harry Potter themed Whack-A-Mole game and to explore my Github page.</p>
+                    <a href = "https://github.com/rivincity/Whack-A-Mole-Game">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI/ML Research Assistant</h2>
+                    <p>I have prior experience as a research intern researching Human-Computer Interaction and learned about NLPs, CNNS, and other ML models through InspiritAI. Click learn more to see my final poster symposium from my research at NJIT and a final presentation from InspiritAi.</p>
+                    <a href = "https://docs.google.com/presentation/d/1n91DTyI4rVuBeBfjM-ONR4wHL0LDPQ5X/edit#slide=id.p2">view poster symposium</a>
+                    <br>
+                    <a href = "https://docs.google.com/presentation/d/1wqAoV_QxaNFZIaSIgisBkZ4U4a9sNQlQl1i_8t--Y4Y/edit#slide=id.p">view final presentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "portfolio">
+        <div class="container">
+            <h1 class = "sub-title">My Work</h1>
+            <div class="work-list">
+                <div class = "work">
+                    <img src = "images/project-1.png">
+                    <div class = "layer">
+                        <h3>NewsFinder App</h3>
+                        <p>Created a mobile application that returns any news article based on input from the user. Registration and login information is stored using the Firebase database. To narrow the news search, users will enter their preferences for country, query, language, category, domain, and page count. A short list of relevant news articles will appear with the option to "favorite" an article.</p>
+                        <a href = "https://github.com/rivincity/News-Finder-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class = "work">
+                    <img src = "images/project-2.png">
+                    <div class = "layer">
+                        <h3>Run Game</h3>
+                        <p>Recreated the classic game "Run" in Unity. Users used WASD to move in the four directions and press space to switch the gravity. If a player runs into an obstacle, the game will reset automatically.</p>
+                        <a href = "https://github.com/rivincity/Run-Game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class = "work">
+                    <img src = "images/project-3.png">
+                    <div class = "layer">
+                        <h3>Space Shooter Game</h3>
+                        <p>Designed a space shooter game in Unity which includes a player ship and enemy ships. The player ship can shoot missiles using the keys 'A' and 'D'. The goal is to shoot the enemy ships which spawn in random waves of four from the top of the screen. When a missile collides with an enemy ship, an explosion occurs and the ship explodes into pieces. Game lasts until an enemy ship runs into the player ship.</p>
+                        <a href = "https://github.com/rivincity/Space-Shooter-Game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href = "https://github.com/rivincity" class = "btn">See more</a>
+        </div>
+    </div>
+    <div id = "contact">
+        <div class="container">
+            <div class = "row">
+                <div class = "contact-left">
+                    <h1 class = "sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rivan.parikh@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>732-519-2222</p>
+                    <div class = "social-icons">
+                        <a href = "https://www.linkedin.com/in/rivan-parikh"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href = "https://www.github.com/rivincity"><i class="fa-brands fa-github"></i></a>
+                        <a href = "https://instagram.com/rivincity"><i class="fa-brands fa-instagram"></i></a>
+                        <a href = "https://www.tiktok.com/@rivincity?_t=8ivNOZhOu91&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href = "https://www.snapchat.com/add/rivincity?invite_id=_YRoG8on&locale=en_US&share_id=Y_vPolbzSc2fcIaaRJrAeA&sid=829390971d7c435e88e8eb5e4e79c88a"><i class="fa-brands fa-snapchat"></i></a>
+                    </div>
+                    <a href = "images/Rivan Parikh - Resume.pdf" download class = "btn btn2">Download Resume</a>
+                </div>
+                <div class = "contact-right">
+                    <form name = "submit-to-google-sheet">
+                        <input type = "text" name = "Name" placeholder = "Your Name" required>
+                        <input type = "email" name = "Email" placeholder = "Your Email" required>
+                        <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                        <button type = "submit" class = "btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rivan Parikh 2024</p>
+        </div>
+    </div>
+</body>
+</html>
