@@ -1,2 +1,17 @@
-# Personal-Portfolio-Website
-Created a personal portolio using HTML, CSS, and Javascript. There are five sections: home, about, services, portfolio, and contact. The nav bar scrolls to the section corresponding to the header when clicked. Used Javascript for the tab feature within the "About Me" section to alternate between the tabs. The services and portfolio page utilize a grid format with hyperlinks to my projects and work on Github. The contact section has hyperlinks to my social media pages, a button to download my resume, and a form to reach out that is stored on a Google Sheets I created. After creating the initial webpage, I am working on converting it to React.js
+# Rivan Parikh — Personal Portfolio
+
+A responsive, résumé-driven portfolio built with HTML, CSS, and JavaScript. It highlights my engineering experience, selected projects, technical skills, education, and contact information.
+
+## Local preview
+
+Serve the repository root with any static file server. For example:
+
+```sh
+python3 -m http.server 4173
+```
+
+Then open `http://localhost:4173/`.
+
+## Deployment
+
+The site is structured to deploy directly from the repository root. On Netlify, leave the build command empty and set the publish directory to `.`.

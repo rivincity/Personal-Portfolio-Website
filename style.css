@@ -270,9 +270,9 @@ a {
 .portrait-frame {
     position: relative;
     width: 100%;
-    min-height: 520px;
+    height: 520px;
     overflow: hidden;
-    background: var(--blue);
+    background: #d6e5f8;
     border: 1px solid var(--ink);
     border-radius: 170px 170px 24px 24px;
 }
@@ -280,9 +280,11 @@ a {
 .portrait-frame::after {
     position: absolute;
     inset: auto 0 0;
+    z-index: 2;
     height: 45%;
     background: linear-gradient(transparent, rgba(16, 17, 20, 0.22));
     content: "";
+    pointer-events: none;
 }
 
 .portrait-grid {
@@ -295,12 +297,13 @@ a {
 
 .portrait-frame img {
     position: absolute;
-    right: -17%;
-    bottom: 0;
+    inset: 0;
     z-index: 1;
-    width: 135%;
-    max-width: none;
-    filter: saturate(0.75) contrast(1.05);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 46%;
+    filter: saturate(0.9) contrast(1.03);
 }
 
 .portrait-note {
@@ -909,7 +912,7 @@ a {
     .button-primary { justify-content: space-between; }
 
     .portrait-frame {
-        min-height: 430px;
+        height: 430px;
         border-radius: 140px 140px 20px 20px;
     }
 
